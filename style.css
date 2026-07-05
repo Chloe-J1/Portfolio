@@ -1,3 +1,29 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 body{
     background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(10px, 3vw, 25px);
+    background-color: #1a1a1a;
+    padding: clamp(15px, 3vw, 30px);
+    border-radius: 20px;
+    width: clamp(250px, 60vw, 500px);
+}
+
+.screen{
+    background-color: blue;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
 }
