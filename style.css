@@ -64,3 +64,10 @@ footer
 {
     background-color: rgb(226, 22, 90);
 }
+
+#bannerTrailer
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
