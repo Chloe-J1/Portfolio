@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/*HEADER*/
 .banner
 {
     background-color: rgb(226, 22, 90);
@@ -42,6 +43,14 @@
     text-align: center;
 }
 
+#bannerTrailer
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*PROJECTS*/
 .cardContainer
 {
     background-color: rgb(237, 84, 135);
@@ -60,14 +69,13 @@
     position: relative;
 }
 
+/**/
 footer
 {
     background-color: rgb(226, 22, 90);
 }
 
-#bannerTrailer
+#home, #about, #projects
 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    scroll-margin-top: 48px; /*leave space so the navbar doesn't get in front of the content you jumped to*/
 }
