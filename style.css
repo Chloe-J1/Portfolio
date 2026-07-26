@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
 }
 
 /*HEADER*/
@@ -20,12 +21,14 @@
     position: fixed;
     width: 100%;
     display: flex;
+    justify-content: end;
 }
 
 .navBar ul
 {
     list-style-type: none;
     overflow: hidden;
+    margin-right: 10%;
 }
 
 .navBar li
@@ -35,12 +38,21 @@
 
 .button
 {
-    background-color: rgb(237, 84, 135);
     color: black;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
+}
+
+.button:hover
+{
+    background-color: rgb(237, 84, 135);
+}
+
+.button.active
+{
+    background-color: rgb(237, 84, 135);
 }
 
 #bannerTrailer
@@ -75,7 +87,8 @@ footer
     background-color: rgb(226, 22, 90);
 }
 
+/*ANCHORS*/
 #home, #about, #projects
 {
-    scroll-margin-top: 48px; /*leave space so the navbar doesn't get in front of the content you jumped to*/
+    scroll-margin-top: 51px; /*leave space so the navbar doesn't get in front of the content you jumped to*/
 }

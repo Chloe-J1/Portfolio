@@ -5,41 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <header>
-      <div class="banner" id="home">
-        <nav class="navBar">
-          <ul>
-            <li><a href="#home" class="button">HOME</a></li>
-            <li><a href="#projects" class="button">PROJECTS</a></li>
-            <li><a href="#about" class="button">ABOUT</a></li>
-          </ul>
-        </nav>
+      <section id="home" class="content">
+        <div class="banner">
+          <nav class="navBar">
+            <ul>
+              <li><a href="#home" class="button">HOME</a></li>
+              <li><a href="#projects" class="button">PROJECTS</a></li>
+              <li><a href="#about" class="button">ABOUT</a></li>
+            </ul>
+          </nav>
 
-        <video playsinline autoplay loop muted id="bannerTrailer">
-          <source src="Assets/EclipseTrimmedTrailer.mp4" type="video/mp4">
-          <p>Your browser does not support the video tag.</p>
-        </video>
-      </div>
+          <video playsinline autoplay loop muted id="bannerTrailer">
+            <source src="Assets/EclipseTrimmedTrailer.mp4" type="video/mp4">
+            <p>Your browser does not support the video tag.</p>
+          </video>
+        </div>
+      </section>
     </header>
 
     <main>
         <!-- Projects -->
-        <div class="cardContainer" id="projects">
-          <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora perspiciatis quae minima porro? Neque fugiat quia aut dicta, vitae id.</p></div>
-          <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veritatis possimus est voluptas sequi fuga ex soluta animi ut ducimus.</p></div>
-          <div class="card"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto non nam modi pariatur veritatis doloremque hic aliquam vero accusantium maxime.</p></div>
-          <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veritatis possimus est voluptas sequi fuga ex soluta animi ut ducimus.</p></div>
-          <div class="card"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto non nam modi pariatur veritatis doloremque hic aliquam vero accusantium maxime.</p></div>
-        </div>
+         <section id="projects" class = content>
+          <div class="cardContainer">
+            <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora perspiciatis quae minima porro? Neque fugiat quia aut dicta, vitae id.</p></div>
+            <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veritatis possimus est voluptas sequi fuga ex soluta animi ut ducimus.</p></div>
+            <div class="card"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto non nam modi pariatur veritatis doloremque hic aliquam vero accusantium maxime.</p></div>
+            <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veritatis possimus est voluptas sequi fuga ex soluta animi ut ducimus.</p></div>
+            <div class="card"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto non nam modi pariatur veritatis doloremque hic aliquam vero accusantium maxime.</p></div>
+          </div>
+         </section>
+        
     </main>
 
-    <footer id="about">
-      <p>
-        ABOUT
-      </p>
+    <footer>
+      <section id="about" class="content">
+        <p>
+          ABOUT
+        </p>
+      </section>
     </footer>
 
     <script src="script.js"></script>
