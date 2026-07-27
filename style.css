@@ -1,3 +1,13 @@
+/*COLORS*/
+:root 
+{
+    --main-bg: #fff0f3;
+    --accent: #ff4d6d;
+    --soft-pink: #ffe8ec;
+    --secondary-accent: #ffb9c6;
+    --transparent: rgba(255, 240, 243, 0.7);
+}
+
 * 
 {
   margin: 0;
@@ -9,7 +19,7 @@
 /*HEADER*/
 .banner
 {
-    background-color: rgb(226, 22, 90);
+    background-color: -accent;
     width: 100%;
     height: 100vh;
 }
@@ -17,7 +27,7 @@
 .navBar
 {
     z-index: 1; /*stay on-top of every element*/
-    background-color: rgba(255, 228, 196, .7);
+    background-color: var(--transparent);
     position: fixed;
     width: 100%;
     display: flex;
@@ -38,6 +48,7 @@
 
 .button
 {
+    position: relative;
     color: black;
     text-decoration: none;
     padding: 15px;
@@ -45,14 +56,33 @@
     text-align: center;
 }
 
+.button::after
+{
+    content:"";
+    position: absolute;
+    bottom: 3px;
+    height: 4px;
+    width: 100%;
+    left:0;
+    background-color: black;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.button:hover::after
+{
+    transform: scaleX(1);
+}
+
 .button:hover
 {
-    background-color: rgb(237, 84, 135);
+    background-color: var(--secondary-accent);
 }
 
 .button.active
 {
-    background-color: rgb(237, 84, 135);
+    background-color: var(--secondary-accent);
 }
 
 #bannerTrailer
@@ -65,7 +95,7 @@
 /*PROJECTS*/
 .cardContainer
 {
-    background-color: rgb(237, 84, 135);
+    background-color: var(--main-bg);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -73,12 +103,28 @@
 
 .card
 {
-    background-color: rgb(226, 22, 90);
+    background-color: var(--soft-pink);
     width: 400px;
     height: 600px;
     margin: 20px;
     overflow: hidden;
     position: relative;
+}
+
+.card-image
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+
+.card-image img
+{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 /**/
