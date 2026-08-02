@@ -1,11 +1,13 @@
 /*COLORS*/
 :root 
 {
-    --main-bg: #fff0f3;
-    --accent: #ff4d6d;
-    --soft-pink: #ffe8ec;
-    --secondary-accent: #ffb9c6;
+    --main-bg: #FFF8FA;
+    --accent: #F65D8C;
+    --soft-pink: #FFE9EF;
+    --secondary-accent: #D98CA3;
     --transparent: rgba(255, 240, 243, 0.7);
+
+    --text: #340e19;
 }
 
 * 
@@ -19,6 +21,11 @@
 body
 {
     background-color: var(--main-bg);
+}
+
+p, h3, a
+{
+    color: var(--text);
 }
 
 /*HEADER*/
@@ -172,7 +179,7 @@ body
 /**/
 footer
 {
-    background-color: rgb(226, 22, 90);
+    background-color: var(--accent);
 }
 
 /*ANCHORS*/
