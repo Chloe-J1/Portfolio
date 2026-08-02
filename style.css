@@ -127,6 +127,33 @@
   height: 100%;
 }
 
+.card-title
+{
+    text-align: center;
+}
+
+.card-description
+{
+    text-align: center;
+}
+
+/* TAGS */
+.tag-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*allow multi-lining*/
+    gap: 3%;
+    margin-top: 1%;
+}
+
+.tag
+{
+    background-color: var(--accent);
+    border-radius: 8em;
+    padding: 2px 8px 2px 8px;
+}
+
 /**/
 footer
 {
