@@ -16,6 +16,11 @@
   font-family: 'Sora', sans-serif;
 }
 
+body
+{
+    background-color: var(--main-bg);
+}
+
 /*HEADER*/
 .banner
 {
@@ -95,10 +100,10 @@
 /*PROJECTS*/
 .cardContainer
 {
-    background-color: var(--main-bg);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 35px;
 }
 
 .card
@@ -109,6 +114,8 @@
     margin: 20px;
     overflow: hidden;
     position: relative;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 15px 12px;
 
     transition: 0.3s ease;
     cursor: pointer;
