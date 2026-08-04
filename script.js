@@ -28,3 +28,8 @@ function openEclipse()
     // Redirect to eclipse project page
     window.location.href = "../Projects/eclipse.html";
 }
+
+function openPage(url)
+{
+    window.location.href = url;
+}
