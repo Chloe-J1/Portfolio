@@ -22,3 +22,9 @@ function scrollTracker()
 }
 
 window.addEventListener("scroll", scrollTracker);
+
+function openEclipse()
+{
+    // Redirect to eclipse project page
+    window.location.href = "../Projects/eclipse/html";
+}
