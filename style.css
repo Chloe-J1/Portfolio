@@ -176,6 +176,7 @@ p, h3, a
 .card-description
 {
     text-align: center;
+    margin: 5px;
 }
 
 /* TAGS */
