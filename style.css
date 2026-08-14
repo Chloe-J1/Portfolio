@@ -240,9 +240,34 @@ footer
     width: 100%;
 }
 
+
 .modal-text h3
 {
     margin-top: 0.5em;
+}
+
+.modal-text-container
+{
+    display: flex;
+    gap: 20px;
+}
+
+.col
+{
+    width: 50%;
+}
+
+@media (max-width: 1300px) 
+{
+    .modal-text-container
+    {
+        display: inline-block;
+    }
+
+    .col
+    {
+        width: 100%;
+    }
 }
 
 .styled-hr
