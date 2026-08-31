@@ -35,7 +35,8 @@
       <!-- Projects -->
       <section id="projects" class = content>
         <div class="cardContainer">
-          <div class="card">
+          <!-- ECLIPSE -->
+          <div class="card" href="#elclipse-modal">
             <figure class="card-image">
              <img src="Assets/EclipseSquare.jpg" class="img" alt="Eclipse">
             </figure>
@@ -48,8 +49,44 @@
               <p>Eclipse is a local co-op puzzle game. Grab a friend and find your way through a medieval castle, helping each other along the way, to bring the sun and moon knights back to their right worlds.</p>
             </div>
           </div>
-          
-          <div class="card" id="myBtn">
+
+          <!-- The Modal -->
+          <div class="modal" id="elclipse-modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>              
+              <video playsinline autoplay loop muted class="modal-video">
+                <source src="Assets/EclipseTrailer.mp4" type="video/mp4">
+                <p>Your browser does not support the video tag.</p>
+              </video>
+              <div style="display: inline-block;"> <!--makes the div the size of the text so the hr always perfectly underlines the title -->
+                  <h2>Clutch Patch</h2>
+                  <hr class="styled-hr">
+              </div>
+              <div class="modal-text-container">
+                <div  class="col">
+                  <h3>Description</h3>
+                  <p>This project was created for L'Oréal Garnier to help them step into the gaming world.
+                  The game is designed for Twitch streamers, allowing them to engage their audience through chat messages that influence the gameplay.
+                  Our biggest challenge was finding a way to connect Unity with the live chat, eventually we bridged this gap with the <i>Unity Twitch Chat</i> IRC.
+                  </p>
+                </div>
+                
+                <div class="col">
+                  <h3>My contributions</h3>
+                  <ul class="bullet-points">
+                      <li>    Integrate the Twitch API</li>
+                      <li>    Twitch events</li>
+                      <li>    Quest system</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="https://github.com/Chloe-J1/Portfolio" onclick="window.open(this.href,'_blank');return false;" class="tag link" style="display: inline-block;">Github</a>
+            </div>
+          </div>
+
+          <!-- CLUTCH PATCH -->
+          <div class="card" href="#clutchpatch-modal">
             <figure class="card-image">
              <img src="Assets/ClutchPatchSmall.png" class="img" alt="Clutch Patch image">
             </figure>
@@ -66,7 +103,7 @@
             </div>
           </div>
           <!-- The Modal -->
-          <div id="myModal" class="modal">
+          <div id="clutchpatch-modal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>              
