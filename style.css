@@ -196,6 +196,11 @@ p, h3, h2, a
     padding: 2px 8px 2px 8px;
 }
 
+.link
+{
+    text-decoration: none;
+}
+
 /**/
 footer
 {
