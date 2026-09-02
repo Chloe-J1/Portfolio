@@ -256,6 +256,7 @@ footer
 {
     object-fit: cover;
     width: 100%;
+    background-color: var(--secondary-accent);
 }
 
 .modal-content h2
@@ -303,6 +304,7 @@ footer
     justify-content: center;
     flex-wrap: wrap;
     gap: 3%;
+    margin-top: 7px;
 }
 
 /* The Close Button X */
