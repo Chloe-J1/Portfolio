@@ -201,12 +201,6 @@ p, h3, h2, a
     text-decoration: none;
 }
 
-/**/
-footer
-{
-    background-color: var(--accent);
-}
-
 /*ANCHORS*/
 #home, #about, #projects
 {
@@ -345,4 +339,17 @@ footer
     {
         padding: 3% 8%;
     }
+}
+
+/* FOOTER */
+footer
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon
+{
+    color: var(--accent);
 }
