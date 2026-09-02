@@ -323,3 +323,26 @@ footer
   text-decoration: none;
   cursor: pointer;
 }
+
+/* ABOUT SECTION */
+.about
+{
+    background-color: var(--soft-pink);
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content
+{
+    padding: 3% 15%;
+}
+
+@media (max-width: 800px) 
+{
+    .about-content
+    {
+        padding: 3% 8%;
+    }
+}
