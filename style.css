@@ -239,40 +239,44 @@ footer
   width: 80%;
 }
 
+@media (max-width: 1300px) 
+{
+    .modal-content 
+    {
+        text-align: center;
+        background-color: #fefefe;
+        margin: 8% auto; /* 8% from the top and centered */
+        padding: 10px;
+        border: 1px solid #888;
+        width: 90%;
+    }
+}
+
 .modal-video
 {
     object-fit: cover;
     width: 100%;
 }
 
-
-.modal-text h3
+.modal-content h2
 {
-    margin-top: 0.5em;
+    font-size: 40px;
 }
 
 .modal-text-container
 {
-    display: flex;
-    gap: 20px;
+    font-size: 20px;
 }
 
-.col
+.modal-text-container h3
 {
-    width: 50%;
+    margin-top: 0.5em;
+    font-size: 32px;
 }
 
-@media (max-width: 1300px) 
+.modal-text-container
 {
-    .modal-text-container
-    {
-        display: inline-block;
-    }
-
-    .col
-    {
-        width: 100%;
-    }
+    display: inline-block;
 }
 
 .styled-hr
