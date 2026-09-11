@@ -301,6 +301,12 @@ p, h3, h2, a
     margin-top: 7px;
 }
 
+.link:hover
+{
+    background-color: var(--text);
+    color:#fefefe;
+}
+
 /* The Close Button X */
 .close 
 {
