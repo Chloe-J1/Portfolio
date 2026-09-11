@@ -58,6 +58,7 @@ for (var i = 0; i < spans.length; i++)
       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
     }
  }
+ 
 }
 
 // When the user clicks anywhere outside of the modal, close it
