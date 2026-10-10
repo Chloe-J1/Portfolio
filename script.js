@@ -70,3 +70,21 @@ window.onclick = function(event)
      }
     }
 }
+
+// Card video playing on hover
+document.querySelectorAll('.card').forEach(card => {
+  const video = card.querySelector('.card-video');
+  if (!video) return;
+
+  card.addEventListener('mouseenter', () => {
+    video.play()
+      .then(() => { if (card.matches(':hover')) card.classList.add('is-playing'); })
+      .catch(() => {});
+  });
+
+  card.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;   // haal weg als hij moet doorgaan waar hij was
+    card.classList.remove('is-playing');
+  });
+});
