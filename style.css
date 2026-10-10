@@ -122,7 +122,7 @@ p, h3, h2, a
     object-fit: cover;
 }
 
-.hero-title
+.hero-container
 {
     /* Positioning */
     z-index: 1;
@@ -134,9 +134,15 @@ p, h3, h2, a
     transform: translate(-50%, -50%);
 
     /* Styling */
+    background-color: var(--transparent);
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.hero-title
+{
     color: var(--text);
     font-size: 100px;
-    background-color: var(--transparent);
 }
 
 @media (max-width: 1300px) 
