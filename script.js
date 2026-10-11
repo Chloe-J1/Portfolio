@@ -59,7 +59,7 @@ document.querySelectorAll('.card').forEach(card => {
 
   card.addEventListener('mouseleave', () => {
     video.pause();
-    video.currentTime = 0;   // haal weg als hij moet doorgaan waar hij was
+    video.currentTime = 0;
     card.classList.remove('is-playing');
   });
 });
