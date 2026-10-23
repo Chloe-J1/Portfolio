@@ -254,6 +254,49 @@
                 </div>
             </div>
           </div>
+
+          <!-- ZOMBIE SURVIVOR -->
+          <div class="card" href="#zombiesurvivor-modal">
+            <figure class="card-image">
+             <img src="Assets/ZombieSurvivor.png" class="img" alt="Zombie survivor image">
+            </figure>
+            <!-- <video playsinline loop muted preload="none" class="card-video" poster="Assets/ZombieSurvivor.png">
+              <source src="Assets/ClutchPatchTrailer.mp4" type="video/mp4">
+              <p>Your browser does not support the video tag.</p>
+            </video> -->
+            <div class="tag-container">
+              <p class="tag">C++</p>
+              <p class="tag">Unreal</p>
+              <p class="tag">Game AI</p>
+            </div>
+            <div class="card-description">
+              <h3>Zombie Survivor AI</h3>
+              <p>In this project the survivor AI makes decisions on its own to stay alive as long as possible.</p>
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div id="zombiesurvivor-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>              
+              <!-- <video playsinline autoplay loop muted class="modal-video">
+                <source src="Assets/ClutchPatchTrailer.mp4" type="video/mp4" alt="Gameplay video">
+                <p>Your browser does not support the video tag.</p>
+              </video> -->
+              <div style="display: inline-block;"> <!--makes the div the size of the text so the hr always perfectly underlines the title -->
+                  <h2>Zombie Survivor AI</h2>
+                  <hr class="styled-hr">
+              </div>
+              <div class="modal-text-container">
+                  <h3>Description</h3>
+                  <p>
+                    In this zombie survival game the survivor agent is capable of making its decisions on its own, based on the situation he is in.
+                    I made custom tasks which specify what the survivor should do, the transitioning between which task is being executed is handled with a <strong>behavior tree</strong>.
+                    Moving the survivor is done with <strong>steering behaviors</strong>: seek, flee, avoid and priority steering.
+                  </p>
+                </div>
+            </div>
+          </div>
         </div>
       </section>
 
